@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://juferfelipe14.github.io/universal-trace-analyzer/sitemap.xml

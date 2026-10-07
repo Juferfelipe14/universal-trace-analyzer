@@ -1,0 +1,41 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Q.850 cause 41 Temporary failure — meaning and what to check</title><meta name="description" content="Q.850 cause 41 Temporary failure: Temporary failure on the network side.">
+<link rel="canonical" href="https://juferfelipe14.github.io/universal-trace-analyzer/codes/q850-41-temporary-failure.html"><meta property="og:title" content="Q.850 cause 41 Temporary failure — meaning and what to check">
+<meta property="og:description" content="Q.850 cause 41 Temporary failure: Temporary failure on the network side."><meta property="og:type" content="article">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Schibsted+Grotesk:wght@400;600;800&display=swap">
+<style>
+:root{--ink:#0E1A2B;--ink2:#3B4A5E;--ink3:#6B7A8D;--line:#D9DEE5;--bg:#F7F8FA;--card:#FFFFFF;--rej:#D1342F;--ok:#15803D;--note:#FFF4D6;--brand:#7A2E38}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 "Schibsted Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:var(--ink)}.wrap{max-width:860px;margin:0 auto;padding:0 18px}
+header.top{display:flex;justify-content:space-between;align-items:center;padding:18px 0;border-bottom:1px solid var(--line)}
+.brand{display:flex;gap:10px;align-items:center;font-weight:800;text-decoration:none}.brand svg{width:26px;height:26px}
+.top nav a{margin-left:18px;font-size:14px;color:var(--ink2);text-decoration:none}
+h1{overflow-wrap:anywhere;font-size:clamp(28px,4.4vw,40px);line-height:1.1;margin:34px 0 10px;letter-spacing:-.01em}
+h2{font-size:19px;margin:28px 0 8px}.code{font-family:"IBM Plex Mono",ui-monospace,monospace}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 6px}.tag{font:500 12px "IBM Plex Mono",monospace;border:1px solid var(--line);border-radius:999px;padding:3px 10px;background:var(--card);color:var(--ink2)}
+.lede{font-size:18px;color:var(--ink2)}.box{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin:18px 0}
+.cta{background:var(--ink);color:#fff;border-radius:12px;padding:22px;margin:30px 0}.cta p{margin:0 0 12px;color:#D7DEE8}
+.cta a.btn{display:inline-block;background:#fff;color:var(--ink);font-weight:700;padding:11px 18px;border-radius:9px;text-decoration:none}
+.related{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:10px}.related a{display:block;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 12px;text-decoration:none;font-size:14px}
+.related a span{display:block;color:var(--ink3);font-size:12px}
+footer{margin:50px 0 30px;padding-top:18px;border-top:1px solid var(--line);font-size:13px;color:var(--ink3)}footer a{color:var(--ink3)}
+input.search{width:100%;font:16px inherit;padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:var(--card)}
+table{width:100%;border-collapse:collapse;margin:8px 0 24px;background:var(--card)}td{border-bottom:1px solid var(--line);padding:8px 10px;vertical-align:top;font-size:15px}
+td.c{font-family:"IBM Plex Mono",monospace;white-space:nowrap;width:1%}.crumbs{font-size:13px;color:var(--ink3);margin-top:16px}.crumbs a{color:var(--ink3)}
+.warn{background:var(--note);border:1px solid #F0D28A;border-radius:10px;padding:12px 14px;font-size:15px}
+</style><script type="application/ld+json">{"@context": "https://schema.org", "@type": "TechArticle", "headline": "Q.850 cause 41 Temporary failure", "description": "Temporary failure on the network side.", "about": "Q.850 cause", "citation": "ITU-T Q.850 Table 1", "dateModified": "2026-10-07"}</script></head><body><div class="wrap">
+<header class="top"><a class="brand" href="https://juferfelipe14.github.io/universal-trace-analyzer/"><svg viewBox="0 0 26 26" aria-hidden="true"><rect width="26" height="26" rx="7" fill="#7A2E38"/><path d="M5 13h4l2-5 4 10 2-5h4" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Universal Trace Analyzer</a>
+<nav><a href="https://juferfelipe14.github.io/universal-trace-analyzer/codes/">Error codes</a><a href="https://trace-analyzer-signaltrace.streamlit.app">Analyze a trace</a></nav></header>
+<div class="crumbs"><a href="https://juferfelipe14.github.io/universal-trace-analyzer/codes/">Error codes</a> › <a href="https://juferfelipe14.github.io/universal-trace-analyzer/codes/#q850">Q.850 cause</a></div>
+<h1>Q.850 cause 41 Temporary failure</h1>
+<div class="meta"><span class="tag">Q.850 cause</span><span class="tag">ITU-T Q.850 Table 1</span></div>
+<h2>What it means</h2><p class="lede">Temporary failure on the network side.</p>
+<h2>Where you see it</h2><p>In ISUP/BICC REL messages, 2G/3G DTAP Disconnect, and SIP Reason headers (Q.850;cause=…).</p>
+<h2>What to check</h2><div class="box">Retry; if it persists, escalate to the corresponding operator.<br><br>Check the cause location (user, private or public network) to see which side released the call.</div>
+<div class="cta"><p><b style="color:#fff">Got a trace with Q.850 cause 41 Temporary failure?</b> Drop it in the analyzer: it finds the step that really failed first, which node sent the code and what to ask the other side. Captures, test-system PDFs and vendor exports. 5 free analyses a month, no sign-up.</p><a class="btn" href="https://trace-analyzer-signaltrace.streamlit.app">Analyze a trace free</a></div>
+<h2>Related codes</h2><div class="related"><a href="https://juferfelipe14.github.io/universal-trace-analyzer/codes/q850-42-switching-equipment-congestion.html">Q.850 cause 42 Switching equipment congestion<span>Switching equipment congestion.…</span></a><a href="https://juferfelipe14.github.io/universal-trace-analyzer/codes/q850-38-network-out-of-order.html">Q.850 cause 38 Network out of order<span>Network out of order.…</span></a><a href="https://juferfelipe14.github.io/universal-trace-analyzer/codes/q850-44-requested-circuit-channel-not-available.html">Q.850 cause 44 Requested circuit/channel not available<span>The requested circuit/channel isn&#x27;t available (Requested circuit/chann…</span></a><a href="https://juferfelipe14.github.io/universal-trace-analyzer/codes/q850-47-resource-unavailable-unspecified.html">Q.850 cause 47 Resource unavailable, unspecified<span>Resources unavailable, unspecified — a capacity/resource issue without…</span></a><a href="https://juferfelipe14.github.io/universal-trace-analyzer/codes/q850-34-no-circuit-channel-available.html">Q.850 cause 34 No circuit/channel available<span>No circuit/channel available — congestion on the call&#x27;s route.…</span></a><a href="https://juferfelipe14.github.io/universal-trace-analyzer/codes/q850-49-quality-of-service-not-available.html">Q.850 cause 49 Quality of service not available<span>The requested quality of service isn&#x27;t available (Quality of service u…</span></a></div>
+<footer>Meanings follow the cited 3GPP / IETF / ITU-T specifications. Universal Trace Analyzer reads captures, test reports and vendor exports and explains which step failed and why.
+<br><a href="https://trace-analyzer-signaltrace.streamlit.app/?page=terms">Terms</a> · <a href="https://trace-analyzer-signaltrace.streamlit.app/?page=privacy">Privacy</a> · <a href="https://trace-analyzer-signaltrace.streamlit.app/?page=refund">Refunds</a> · <a href="mailto:juferfelipe+uta@gmail.com">Contact</a></footer>
+</div></body></html>
