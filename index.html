@@ -211,11 +211,11 @@ footer { margin-top: 80px; border-top: 1px solid var(--line); padding-block: 26p
       </div>
       <div class="cases">
         <article class="case">
-          <div class="in">Input · S6a capture (MME ↔ IPX ↔ HSS)</div>
-          <h3>Roaming attach rejected</h3>
-          <div class="flow">AIR  → AIA  <span class="ok">2001</span>
-ULR  → ULA  <span class="x">5004 ROAMING_NOT_ALLOWED</span></div>
-          <p class="out">The home HSS refused roaming in this VPLMN. When the 5004 comes from a <b>Steering-of-Roaming node</b> instead, it says so: that is steering on purpose, not a provisioning fault.</p>
+          <div class="in">Input · S11/S5 capture (MME ↔ SGW ↔ PGW)</div>
+          <h3>New data sessions keep failing</h3>
+          <div class="flow">Create Session Request   APN internet
+Create Session Response  <span class="x">84 All dynamic addresses occupied</span></div>
+          <p class="out">Not the subscriber and not the radio: the gateway's <b>IP pool for that APN is full</b>, so every new session fails until addresses are freed or the pool grows.</p>
         </article>
         <article class="case">
           <div class="in">Input · test-system report (PDF, two test phones)</div>
